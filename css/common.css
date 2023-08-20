@@ -15,6 +15,7 @@ h1, h2, h3 {
 }
 h2, h3 {
   text-transform: uppercase;
+  font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
 }
 p {
   font-size: 14px;
@@ -33,6 +34,71 @@ a {
 .flex-end {
   justify-content: flex-end;
 }
+
 li {
   list-style: none;
+}
+dt, dd {
+  line-height: 2;
+  font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.vertical {
+  writing-mode: vertical-lr;
+}
+
+/* お問い合わせform */
+input[type=text],input[type=tel],
+input[type=email] {
+  padding: 1.5em 0 1.5em min(2.5vw, 50px);
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #888;
+  line-height: 1.5;
+}
+
+/* mobileの時改行 */
+.sp-br {
+  display: none;
+}
+
+/* お問い合わせ */
+.contact {
+  margin-top: 280px;
+  background-color: rgba(49,45,43,.08);
+  
+}
+.contact-area {
+  padding: 150px 0 230px;
+  display: block;
+}
+.contact-tex {
+  margin: 10px 0 60px;
+  line-height: 1.5;
+}
+.contact-img-01 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+}
+.contact-img-02 {
+  position: absolute;
+  top: -100px;
+  right: 0%;
+}
+/* footer */
+.footer {
+  background-image: url("../images/footer_img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.footer-list {
+  padding-top: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3em;
+}
+.footer-info {
+  margin: 140px 0 40px;
 }

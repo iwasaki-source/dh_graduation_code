@@ -27,6 +27,7 @@
 }
 .content {
   margin: 0 8vw;
+  position: relative;
 }
 .index_hero {  
   height: 100vh;
@@ -41,6 +42,7 @@
   position: fixed;
   right: 70px;
   bottom: 5%;
+  z-index: 99;
 }
 .logo-large {
   font-size: 24px;
@@ -59,7 +61,7 @@
   width: 100%;
   /*padding: 0 6vw;*/
 }
-.about-content-wrapper {
+.index_about-content-wrapper {
   display: flex; 
   justify-content: space-between;
   align-items: center;
@@ -68,7 +70,7 @@
 .index_about-img {
   padding: 0 5%;
 }
-.about-content {
+.index_about-content {
   padding: 0vh 5vw;
 }
 .en-title {
@@ -174,16 +176,174 @@
 .index_instagram {
   margin-top: 220px;
 }
-.contact {
-  margin-top: 280px;
-  background-color: rgba(49,45,43,.08);
-  
+.about_hero, .service_hero {
+  height: 100vh;
 }
-.contact-area {
-  padding: 150px 0 230px;
-  display: block;
+.about_hero-content {
+  padding-top: 350px;
+  margin: 0 200px 0 0;
+  display: flex;
 }
-.contact-tex {
-  margin: 10px 0 60px;
-  line-height: 1.5;
+.about_hero-wrapper {
+  padding-left: 60px;
+}
+.about_hero-description {
+  margin-top: 25px;
+}
+.about_heading-content {
+  display: flex;
+  justify-content: center;
+  margin: 0 20vw;
+}
+.about_heading-wrapper {
+  width: 30%;
+}
+.heading-title {
+  margin-top: 15px;
+}
+.about_heading-description {
+  width: 30%;
+}
+.about_advantage-content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_advantage-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.about_advantage-wrapper-tex-img {
+  padding-right: 70px;
+}
+.about_advantage-wrapper-img-tex {
+  padding-left: 70px;
+}
+.about_advantage-img {
+  flex: 0 0 50%;
+}
+.about_advantage-img img {
+  width: 100%;
+}
+.about_advantage-content-row-reverse {
+  flex-direction: row-reverse;
+  margin: 120px 0;
+}
+.about_member-content {
+  width: 40%;
+}
+.about_member-img {
+  margin: 100px 0 30px;
+}
+.about_member-img img {
+  width: 100%;
+}
+.about_member-title {
+  margin-top: 10px;
+}
+.about_company {
+  margin-top: 180px;
+}
+.about_company-content {
+  margin: 60px 0 300px;
+}
+.about_company-content dl {
+  display: flex;
+  padding: 30px 0;
+  border-top: 0.5px solid #707070;
+  /* border-bottom: 0.5px solid #707070; */
+  font-size: 14px;
+}
+.about_company-content dl:last-child {
+  border-bottom: 0.5px solid #707070;
+}
+.about_company-content dl dt {
+  width: 160px;
+}
+.service_hero-content {
+  padding-top: 350px;
+  margin: 0 0 0 8vw;
+  display: flex;
+  align-items: center;
+}
+.service_hero-wrapper {
+  padding-right: 90px;
+}
+.service_hero-en-title {
+  text-transform: none !important;
+}
+.service_hero-description {
+  margin-top: 50px;
+}
+.service_photo-video-img-wrapper {
+  margin: 30px 0 120px;
+  position: relative;
+}
+.service_photo-video-img-02 {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+}
+.service_photo-video-text-area {
+  width: 50%;
+  margin-bottom: 150px;
+}
+.service_guide {
+  margin-top: 240px;
+}
+.service-wrapper {
+  margin: 0 15vw;
+}
+.service-wrapper ol li {
+  list-style-type: decimal-leading-zero;
+  padding-left: 40px;
+  margin-bottom: 80px;
+}
+.service-wrapper ol li::marker {
+  font-size: 14px;
+  font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  width: 22px;
+}
+.service_question {
+  margin-top: 240px;
+}
+.service-wrapper ul li {
+  margin-bottom: 80px;
+  margin-left: -22px;/* li::markerの横幅分マイナスで移動 */
+}
+.contact_contact-area {
+  margin: 180px 13vw 220px;
+  display: grid;
+  row-gap: 60px;
+}
+.contact-content-grid {
+  display: grid;
+  row-gap: 2em;
+}
+.label-check {
+  cursor: pointer;
+}
+.consultation-text {
+  padding-left: 2.5em;
+}
+.required {
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+}
+.required::after {
+  content: "必須";
+  font-size: 0.75em;
+  background-color: rgb(139,139,139);
+  color: #FFF;
+  border-radius: 15px;
+  padding: 2px 10px;
+}
+.name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.name-wrapper span {
+  width: 45%;
 }
