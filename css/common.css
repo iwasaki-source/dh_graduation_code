@@ -5,10 +5,11 @@
 }
 html {
   font-size: 62.5%; /* 16px * 62.5% = 10px */
-  width: 100%;
+  /* width: 100%; */
 }
 body {
   line-height: 1.5;
+  background-color: #F9F8F5;
 }
 h1, h2, h3 {
   font-size: 14px;
