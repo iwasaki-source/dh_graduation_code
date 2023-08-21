@@ -1,9 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%; /* 16px * 62.5% = 10px */
   width: 100%;
-  box-sizing: border-box;
 }
 body {
   line-height: 1.5;
@@ -48,14 +50,33 @@ dt, dd {
 
 /* お問い合わせform */
 input[type=text],input[type=tel],
-input[type=email] {
-  padding: 1.5em 0 1.5em min(2.5vw, 50px);
+input[type=email],textarea {
+  /* padding: 1.5em 0 1.5em min(2.5vw, 50px); */
+  padding: 1.5em min(2.5vw, 50px);
   width: 100%;
   border-radius: 10px;
   border: 1px solid #888;
   line-height: 1.5;
+  /* box-sizing: border-box; */
 }
-
+textarea {
+  padding: 2.5em 0 2.5em min(2.5vw, 50px);
+  line-height: 1.75;
+}
+.textlink {
+  text-decoration: underline;
+  color: #8b8b8b;
+  text-underline-offset: 0.3em;
+}
+.submit {
+  width: 100%;
+  text-align: center;
+  background-color: #312d2b;
+  color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
 /* mobileの時改行 */
 .sp-br {
   display: none;
@@ -85,6 +106,7 @@ input[type=email] {
   top: -100px;
   right: 0%;
 }
+
 /* footer */
 .footer {
   background-image: url("../images/footer_img.png");

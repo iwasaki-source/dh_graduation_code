@@ -315,7 +315,7 @@
 .contact_contact-area {
   margin: 180px 13vw 220px;
   display: grid;
-  row-gap: 60px;
+  row-gap: 80px;
 }
 .contact-content-grid {
   display: grid;
@@ -345,5 +345,5 @@
   justify-content: space-between;
 }
 .name-wrapper span {
-  width: 45%;
+  width: 48%;
 }
