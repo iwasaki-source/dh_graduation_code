@@ -78,6 +78,14 @@
   font-weight: bold;
   letter-spacing: .2em;
 }
+.ja-title {
+  font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  font-weight: bold;
+  font-size: 11px;
+  margin-top: 5px;
+  display: block;
+  letter-spacing: .05em;
+}
 .description {
   margin-top: 40px;
   line-height: 1.5;
@@ -94,16 +102,25 @@
   margin: 0 auto;
   max-width: 1200px;
   background-attachment: fixed;
-  background-image: url("../images/desert-8041043_1280.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.top_parallax-img {
+  background-image: url("../images/top_parallax.png");
+}
+.about_parallax-img-01 {
+  background-image: url("../images/about_parallax-img-01.png");
+}
+.about_parallax-img-02 {
+  background-image: url("../images/about_parallax-img-02.png");
 }
 .container {
   margin: 0 8vw;
 }
 .index_service-p {
   width: 60%;
+  line-height: 2;
 }
 .index_service-content-wrapper {
   display: flex;
@@ -129,6 +146,13 @@
 .index_service-content-right {
   margin-top: 170px;
 }
+.index_example-description-container {
+  display: flex;
+  justify-content: space-between;
+}
+.index_example-description-wrapper {
+  width: 60%;
+}
 .index_example {
   margin-top: 320px;
 }
@@ -141,10 +165,7 @@
   justify-content: space-between;
 }
 .index_example-container-wrapper {
-  width: 20%;
-}
-.index_example-en-title {
-  margin-bottom: 10px;
+  width: 35%;
 }
 .index_example-description {
   margin: 50px 0 110px;
@@ -154,13 +175,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .index_example-bar {
+  position: relative;
+}
+.index_example-bar::before {
   content: "";
   width: 1px;
   height: 250px;
-  background-color: #707070;
-  transform: translate(5px, 0);
+  background-color: rgba(49,45,43,.3);
+  display: block;
+}
+.bar {
+  content: "";
+  width: 1px;
+  /* height: 250px; */
+  /* height: 10%; */
+  background-color: #312d2b;
+  display: block;
+  position: absolute;
+  top: 0;
 }
 .index_example-img-grid {
   display: grid;
@@ -187,8 +222,9 @@
 .about_hero-wrapper {
   padding-left: 60px;
 }
-.about_hero-description {
+.about_hero_description {
   margin-top: 25px;
+  line-height: 1.8;
 }
 .about_heading-content {
   display: flex;
@@ -260,21 +296,6 @@
 }
 .about_company-content dl dt {
   width: 160px;
-}
-.service_hero-content {
-  padding-top: 350px;
-  margin: 0 0 0 8vw;
-  display: flex;
-  align-items: center;
-}
-.service_hero-wrapper {
-  padding-right: 90px;
-}
-.service_hero-en-title {
-  text-transform: none !important;
-}
-.service_hero-description {
-  margin-top: 50px;
 }
 .service_photo-video-img-wrapper {
   margin: 30px 0 120px;

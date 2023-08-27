@@ -107,6 +107,9 @@ textarea {
   top: -100px;
   right: 0%;
 }
+.contact-description {
+  line-height: 2;
+}
 
 /* footer */
 .footer {
