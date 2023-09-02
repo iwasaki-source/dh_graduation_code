@@ -49,6 +49,52 @@ dt, dd {
   writing-mode: vertical-lr;
 }
 
+
+/* ハンバーガーメニュー */
+.header {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+.camera-icon {
+  position: absolute;
+  top: 40px;
+  z-index: 9999;
+  padding: 0 6vw;
+}
+
+.camera-icon-text {
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.header-box {
+  width: 100%;
+  background-color: #FFF;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 0 min(1.6806722689vw + 25.0420168067px,48px) 0 rgba(0,0,0,.15);
+  display: flex;
+  justify-content: center;
+  /* opacity: 0; */
+  translate: 0 -100vh;
+  transition: 1s;
+}
+.header-menu {
+  padding: 130px 0 100px;
+}
+.header-menu-list {
+  display: grid;
+  line-height: 1.75;
+  font-size: 14px;
+}
+.header-menu-list li {
+  padding: 1em 0;
+}
+
 /* お問い合わせform */
 input[type=text],input[type=tel],
 input[type=email],textarea {
