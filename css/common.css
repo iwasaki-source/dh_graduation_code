@@ -118,10 +118,11 @@ textarea {
 .submit {
   width: 100%;
   text-align: center;
-  background-color: #312d2b;
-  color: #fff;
-  padding: 2em;
+  background-color: rgba(49,45,43,.3);
+  color: #312d2b;
+  padding: 3em;
   border-radius: 10px;
+  border: none;
   cursor: pointer;
 }
 /* mobileの時改行 */
