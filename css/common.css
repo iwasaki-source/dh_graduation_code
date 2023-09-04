@@ -133,7 +133,6 @@ textarea {
 .contact {
   margin-top: 280px;
   background-color: rgba(49,45,43,.08);
-  
 }
 .contact-area {
   padding: 150px 0 230px;
@@ -155,6 +154,39 @@ textarea {
 }
 .contact-description {
   line-height: 2;
+}
+/* お問い合わせマウスストーカー */
+.g-ms {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate3d(50vw, 50vh, 0);
+  z-index: 9999;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
+}
+.g-ms_i {
+  width: 160px;
+  height: 160px;
+  margin: -80px; /*半径*/
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scale(0);
+  display: none;    
+}
+.g-ms.g-ms-active .g-ms_i {
+  opacity: 1;
+}
+.g-ms.g-ms-hover .g-ms_i {
+  background-color: #000;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
 }
 
 /* footer */

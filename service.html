@@ -9,13 +9,32 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
-<script src="js/script.js" defer></script> 
+<script src="js/script.js" defer></script>
+<script src="js/mousestalker.js" defer></script> 
 
 <!--webフォント-->
 <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
+
 </head>
 
 <body>
+  <header class="header">
+    <div class="camera-icon">
+      <img src="images/camera-icon.png" alt="">
+      <span class="camera-icon-text">menu</span>
+    </div>
+    <div class="header-box">
+      <div class="header-menu">
+        <ul class="header-menu-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">私たちのこと</a></li>
+          <li><a href="service.html">サービス紹介</a></li>
+          <li><a href="">撮影事例</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 <section class="service_hero">
   <div class="swiper">
     <div class="swiper-wrapper">
@@ -45,6 +64,33 @@
       <br>家族写真から商品撮影・店舗撮影など、ヒト・モノ・コトにまつわる撮影ならお任せください。
     </p>
   </div>
+  <div class="service_photo-video-swiper-content">
+    <div class="service_photo-video-img-left">
+      <img src="images/serice_photo-video-img-swiper_01.png" alt="">
+    </div>
+    <div class="service_photo-video-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_02.png" alt=""><p></p></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_03.png" alt=""></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_04.png" alt=""></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_05.png" alt=""></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_06.png" alt=""></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <a href="" class="more index_about-link service_photo-video-link">view more</a>
+ <!-- <div class="service_photo-video-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_02.png" alt=""></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_03.png" alt=""></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_04.png" alt=""></div>
+        <div class="swiper-slide swiper-img"><img src="images/serice_photo-video-img-swiper_05.png" alt=""></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+</div>-->
 </section>
 <!-- <section class="service_guide">
   <div class="content">
@@ -89,6 +135,9 @@
   </div>
 </section>
 <section class="contact">
+  <div id="g-ms" class="g-ms">
+    <div class="g-ms_i"><div>お問い合わせ</div></div>
+  </div>
   <div class="content">
     <a class="contact-area" href="contact.html">
       <h2 class="en-title">contact</h2>

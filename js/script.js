@@ -9,6 +9,19 @@ const swiper = new Swiper(".swiper", {
   },
   speed: 2000,
 });
+//サービス紹介ページ事例のSwiper
+const swiperPhoto = new Swiper(".service_photo-video-swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 3, //スライダーコンテナにスライドを3枚同時表示
+  spaceBetween: 16, //スライド間の距離を16pxに
+  speed: 600,
+});
+
 
 //ハンバーガーメニュー
 const cameraIcon = document.querySelector('.camera-icon');
@@ -30,7 +43,7 @@ headerBox.addEventListener('mouseleave', () => {
 
 //TOPの撮影事例のスクロール
 const elem = document.getElementById('index_example');
-const elemheight = elem.scrollHeight - 400;
+const elemheight = elem.scrollHeight - 300;
 
 let elemtop = elem.getBoundingClientRect().top + window.pageYOffset;
 
