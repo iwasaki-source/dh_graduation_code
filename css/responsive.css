@@ -1,0 +1,61 @@
+@charset "utf-8";
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .ja-title {
+        font-size: 10px;
+    }
+    .logo {
+        position: absolute;
+        right: 22px;
+        top: 5%;
+        bottom: 0px;
+    }
+    .logo-large {
+        font-size: 16px;        
+    }
+    .logo-small {
+        padding-top: 0px;
+    }
+    .header {
+        left: 0;
+    }
+    .camera-icon {
+        top: 30px;
+        left: 0;
+    }
+    .camera-icon img {
+        width: 35px;
+    }
+    .sp-br {
+        display: block;
+    }
+    /* TOP */
+
+    /* お問い合わせ */
+    .contact_contact-area {
+        margin: 180px 22px 120px;
+        row-gap: 50px; 
+    }
+    .consultation-text-small {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+    .contact-content-grid {
+        row-gap: 1.8em;
+    }
+    input[type=text],input[type=tel],
+input[type=email],textarea {
+    padding: 1.4em 14px;
+    }
+    .privacy-policy {
+        line-height: 2;
+    }
+    .submit {
+        padding: 2em;
+    }
+}
