@@ -25,12 +25,10 @@ p {
   font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
   color: #363636;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .text-upper {
   text-transform: uppercase;
 }
@@ -47,6 +45,9 @@ dt, dd {
 }
 .vertical {
   writing-mode: vertical-lr;
+}
+.pc-none {
+  display: none !important;
 }
 
 
@@ -203,6 +204,8 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   column-gap: 3em;
+  font-size: 14px;
+  font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
 }
 .footer-info {
   margin: 140px 0 40px;

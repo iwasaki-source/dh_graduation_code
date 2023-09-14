@@ -1,13 +1,18 @@
 @charset "utf-8";
-@media (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 12px;
+@media (max-width: 1100px) {
+    .sp-br {
+        display: block;
     }
-    p {
-        font-size: 12px;
+    .sp-none {
+        display: none !important;
     }
-    .ja-title {
-        font-size: 10px;
+    .pc-none {
+        display: block !important;
+    }
+    .sp-contact-link {
+        position: absolute;
+        left: 0;
+        top: 70%;
     }
     .logo {
         position: absolute;
@@ -31,21 +36,6 @@
     .camera-icon img {
         width: 35px;
     }
-    .sp-br {
-        display: block;
-    }
-    .sp-none {
-        display: none !important;
-    }
-    .more {
-        font-size: 12px;
-        text-align: center;
-        display: block;
-    }
-    .container {
-        margin: 0 22px;
-    }
-    /* TOP */
     .swiper {
         margin-top: 93px;
         margin-right: 0 !important;
@@ -78,12 +68,6 @@
         padding: 0;
         margin-top: 25px;
     }
-    .description {
-        margin-top: 25px;
-    }
-    .index_about-link {
-        margin-top: 48px; 
-    }
     .parallax {
         margin: 60px 0;
         height: 480px;
@@ -92,6 +76,90 @@
         margin: 0;
         border-radius: 0;
         background-position: 40%;
+    }
+    .about_hero {
+        height: auto;
+    }
+    .about_hero-content {
+        display: block;
+        padding-top: 93px;
+        margin: 0 22px 0 0;
+    }
+    .about_hero-img {
+        width: 70vh;
+    }
+    .about_hero-wrapper {
+        padding-left: 0px;
+        margin-left: 22px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .about_hero_description {
+        margin-top: 14px;
+        margin-right: 22px;
+    }
+    .about_heading {
+        margin-top: 120px;
+    }
+    .about_heading-content {
+        display: block;
+        margin: 0 22px;
+    }
+    .about_heading-wrapper {
+        width: 100%;
+    }
+    .about_heading-description {
+        width: 100%;
+        margin-top: 24px;
+    }
+    .service_photo-video-swiper {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .ja-title {
+        font-size: 10px;
+    }
+    
+    .sp-br {
+        display: block;
+    }
+    .sp-none {
+        display: none !important;
+    }
+    .pc-none {
+        display: block !important;
+    }
+    .more {
+        font-size: 12px;
+        text-align: center;
+        display: block !important;
+    }
+    .container {
+        margin: 0 22px;
+    }
+    .content {
+        margin: 0 22px;
+    }
+    dt, dd {
+        font-size: 12px;
+    }
+
+    /* TOP */
+    
+    .description {
+        margin-top: 25px;
+    }
+    .index_about-link {
+        margin-top: 48px; 
     }
     .index_service-p {
         width: 100%;
@@ -123,10 +191,188 @@
     .index_service-ja-title {
         writing-mode: vertical-rl;
         position: absolute;
-        top: 40%;
+        top: 28%;
         left: -25%;
         letter-spacing: 0.3rem;
     }
+    .index_service-link {
+        margin-top: 48px;
+    }
+    .index_example {
+        margin-top: 80px;
+        position: relative;
+    }
+    .sticky {
+        position: initial;
+    }
+    .index_example-container {
+        margin: 0 22px;
+        display: block;
+    }
+    .index_example-description-container {
+        display: block;
+    }
+    .index_example-description-wrapper {
+        width: 100%;
+    }
+    .index_example-container-wrapper {
+        width: 100%;
+    }
+    .index_example-description {
+        margin: 20px 0 50px;
+        line-height: 1.8;
+    }
+    .index_example-img-container {
+        width: 100%;
+    }
+    .index_example-img-grid {
+        gap: 60px;
+    }
+    .index_example-img-tex {
+        margin-top: 10px;
+    }
+    .sp-example-link {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .contact {
+        margin-top: 120px;
+    }
+    .contact-area {
+        padding: 70px 0 230px;
+    }
+    .contact-tex {
+        margin: 10px 0 26px;
+    }
+    .sp-contact-link {
+        position: absolute;
+        left: 0;
+        top: 60%;
+    }
+
+    /* 私たちについて */
+    
+    .about_parallax-img-01 {
+        background-position: 30%;
+    }
+    .about_advantage-content {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .about_advantage-content:nth-child(n+2){
+        margin-top: 60px;
+    }
+    .about_advantage-wrapper-tex-img {
+        padding-right: 0;
+    }
+    .about_advantage-wrapper-tex-img h3 {
+        margin-top: 20px;
+    }
+    .about_advantage-wrapper-tex-img .description {
+        margin-top: 14px;
+    }
+    .about_advantage-content-row-reverse {
+        margin: 0;
+    }
+    .about_advantage-wrapper-img-tex {
+        padding-left: 0;
+    }
+    .about_advantage-wrapper-img-tex h3 {
+        margin-top: 20px;
+    }
+    .about_advantage-wrapper-img-tex .description {
+        margin-top: 14px;
+    }
+    .about_parallax-img-02 {
+        background-image: url("../images/about_parallax-img-02-sp.png");
+        background-position: 7%;
+    }
+    .about_member-content {
+        width: 100%;
+    }
+    .about_member-img {
+        margin: 30px 0 20px;
+    }
+    .about_member-title {
+        margin-top: 5px;
+    }
+    .about_company {
+        margin-top: 80px;
+    }
+    .heading-title {
+        margin-top: 5px;
+    }
+    .about_company-content {
+        margin: 40px 0 0;
+    }
+    .about_company-content dl {
+        display: block;
+        padding: 24px 0;
+    }
+    .about_company-content dl dt {
+        width: 100%;
+    }
+    .about_company-content dl dd {
+        margin-top: 8px;
+    }
+
+    /* サービス紹介 */
+    .service_photo-video-img-wrapper {
+        margin: 0;
+    }
+    .service_photo-video-img-01 {
+        height: 320px;
+        position: absolute;
+        top: 60px;
+        right: -22px;
+    }
+    .service_photo-video-img-02 {
+        height: 240px;
+        top: 300px;
+        bottom: 0px;
+        left: -22px;
+    }
+    .service_photo-video-heading {
+        margin-top: 600px;
+    }
+    .service_photo-video-text-area {
+        width: 100%;
+    }
+    .service_photo-video-swiper-content {
+        margin: 74px 0 0;
+    }
+    .service_photo-video-swiper {
+        padding-left: 22px;
+    }
+    .swiper-slide.swiper-img {
+        width: 210px !important;
+    }
+    .swiper-slide.swiper-img img {
+        height: 210px;
+        object-position: bottom;
+        object-fit: cover;
+    }
+    .service_photo-video-link {
+        margin-left: 22px;
+        margin-top: 30px;
+        text-align: left;
+    }
+    .service_question {
+        margin-top: 120px;
+    }
+    .vertical {
+        writing-mode: initial;
+    }
+    .service-wrapper {
+        margin: 60px 0px;
+    }
+    .service-wrapper ul li {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
 
 
 
@@ -157,6 +403,7 @@ input[type=email],textarea {
         padding-top: 60px;
         flex-direction: column;
         row-gap: 3em;
+        font-size: 12px;
     }
     .footer-info {
         margin: 50px 0 25px;
