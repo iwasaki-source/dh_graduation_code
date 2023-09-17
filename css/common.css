@@ -28,6 +28,7 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 .text-upper {
   text-transform: uppercase;
@@ -48,6 +49,28 @@ dt, dd {
 }
 .pc-none {
   display: none !important;
+}
+
+/* Vueのアニメーション */
+.v-enter-active,
+.v-enter-active,
+.v-leave-active,
+.v-move {
+  transition-property: transform, opacity;
+  transition-duration: 1.3s;
+}
+.v-enter-active {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.v-enter-to,
+.v-leave-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 

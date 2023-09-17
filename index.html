@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="js/script.js" defer></script>
-  <script src="js/mousestalker.js" defer></script>
 
   <!--webフォント-->
   <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
@@ -53,17 +50,18 @@
   </section>
   <section class="index_about">
     <div class="index_about-container">
-      <article class="index_about-content-wrapper">
-        <figure class="index_about-img"><img src="images/top_about_01.png" alt=""></figure>
-        <div class="index_about-content">
-          <h2 class="en-title">about</h2>
-          <span class="ja-title">私たちについて</span>
-          <p class="description">マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。<br>
+      <article>
+        <a href="about.html" class="index_about-content-wrapper js-link">
+          <div class="index_about-img"><img src="images/top_about_01.png" alt=""></div>
+          <div class="index_about-content">
+            <h2 class="en-title">about</h2>
+            <span class="ja-title">私たちについて</span>
+            <p class="description">マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。<br>
             <br>また、利用場面によって写真撮影でも動画撮影でも対応可能です。
-            個人でも企業でもご希望にあわせた撮影が可能です。
-          </p>
-          <a href="about.html" class="more index_about-link">view more</a>
-        </div>
+            個人でも企業でもご希望にあわせた撮影が可能です。</p>
+            <span class="more js-more index_about-link">view more</span>
+          </div>
+        </a>
       </article>
     </div>
     <div class="parallax">
@@ -77,12 +75,12 @@
       <p class="description index_service-p">写真撮影・動画撮影各種お客様のご希望にあわせた対応が可能です。<br>
         個人でも企業の方でも心に残る撮影を心がけております。</p>
     </div>
-    <div class="index_service-content-wrapper">
+    <a href="service.html" class="index_service-content-wrapper js-link">
       <div class="index_service-content"> <img src="images/top_service_01.png" alt="" class="index_service-img">
         <p class="en-title text-upper index_service-en-title">photography</p>
         <h3 class="index_service-ja-title">写真撮影</h3>
         <p class="index_service-description">個人からのウェディング写真や家族写真、企業からの店舗・商品撮影まで幅広く対応いたします。ニーズごとに最適な撮影メニューをご用意しています。</p>
-        <a href="service.html" class="more index_service-link sp-none">view more</a>
+        <span href="service.html" class="more js-more index_service-link index_service-link-sp-none">view more</span>
       </div>
       <div class="index_service-content index_service-content-right"> <img src="images/top_service_02.png" alt=""
           class="index_service-img">
@@ -90,8 +88,8 @@
         <h3 class="index_service-ja-title">動画撮影</h3>
         <p class="index_service-description">結婚式の撮影、コーポレート撮影、ドローンを用いた風景動画などジャンルは問わず最適なプランニングで伝わる映像を作り出します。</p>
       </div>
-      <a href="service.html" class="more index_service-link pc-none">view more</a>
-    </div>
+      <a href="service.html" class="more index_service-link index_service-link-pc-none">view more</a>
+    </a>
   </section>
   <section class="index_example" id="index_example">
     <div class="index_example-container">
@@ -100,11 +98,11 @@
           <p class="en-title text-upper">photograph</p>
           <span class="ja-title">撮影事例</span>
           <div class="index_example-description-container">
-            <div class="index_example-description-wrapper">
+            <a  href="photograph.html" class="index_example-description-wrapper js-link">
               <p class="index_example-description">ウェディング、ニューボーン、七五三、商品撮影、建築、風景撮影など、お客様と一緒に作り上げた撮影事例の一部を紹介します
               </p>
-              <a href="" class="more index_about-link sp-example-link">view more</a>
-            </div>
+              <span class="more js-more index_about-link sp-example-link">view more</span>
+            </a>
             <div class="index_example-bar-container sp-none">
               <div class="first">01</div>
               <div class="index_example-bar">
@@ -169,6 +167,10 @@
       <small>© Copy</small>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/mouseLink.js"></script>  
+  <script src="js/script.js" defer></script>
+  <script src="js/mousestalker.js" defer></script>
 </body>
 
 </html>

@@ -9,11 +9,10 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  
-  <script src="js/script.js" defer></script>
-  
+
   <!--webフォント-->
   <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
+
   
 </head>
 
@@ -35,6 +34,43 @@
       </div>
     </div>
   </header>
+  <section class="photograph">
+    <div class="container photo-heading">
+      <h2 class="en-title">photograph</h2>
+      <span class="ja-title">撮影事例</span>
+    </div>
+    <div class="logo">
+      <h1 class="logo-large"><a href="index.html">Mashed Potatoes<br>
+        Production</a></h1>
+      <p class="logo-small"><a href="index.html">photo&amp;video</a></p>
+    </div>
+
+    <div id="app">
+      <div class="filter container">
+        <span class="filter-title">カテゴリー</span>
+        <div class="filter-select">
+          <select v-model="category">
+            <option value="ALL">全て</option>
+            <option value="Wedding">ウェディング</option>
+            <option value="Maternity">マタニティ</option>
+            <option value="Family">家族写真</option>
+            <option value="Shichigosan">七五三</option>
+            <option value="Child">子ども</option>
+            <option value="Food">料理</option>
+            <option value="Architecture">建築</option>
+          </select>
+        </div>
+      </div>
+      <transition-group appear tag="div" class="photo-container container">
+        <div class="photo-content" v-for="project in filterByCategory" :key="index">          
+            <h3>{{project.title}}</h3>
+            <img class="photo-img" :src="project.image" alt="">
+        </div>
+      </transition-group>
+      
+    </div>
+
+  </section>
   
   <section class="contact">
     <div id="g-ms" class="g-ms">
@@ -64,6 +100,9 @@
       <small>© Copy</small>
     </div>
   </footer>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="js/photo.js" defer></script>
 </body>
 
 </html>
