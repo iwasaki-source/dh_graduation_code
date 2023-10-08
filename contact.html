@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
-<title>無題ドキュメント</title>
+<meta name="description" content="マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。">
+<title>マッシュポテトプロダクション</title>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/background.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
 
 <!--webフォント-->
@@ -17,19 +19,22 @@
 </head>
 
 <body>
+  <div class="background-container">
+    <div class="background"></div>
+  </div>
   <header class="header">
     <div class="camera-icon">
-      <img src="images/camera-icon.png" alt="">
+      <img src="images/camera-icon.webp" alt="">
       <span class="camera-icon-text">menu</span>
     </div>
     <div class="header-box">
       <div class="header-menu">
         <ul class="header-menu-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">私たちのこと</a></li>
-          <li><a href="service.html">サービス紹介</a></li>
-          <li><a href="">撮影事例</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html" class="link-hover">HOME</a></li>
+          <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+          <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+          <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+          <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
@@ -43,7 +48,7 @@
   <form>
     <ul class="contact_contact-area">
         <li class="contact-content-grid">
-            <p>ご相談内容</p>
+            <p class="js-contact-tit"><span>ご</span><span>相</span><span>談</span><span>内</span><span>容</span></p>
             <p><label class="label-check">
                 <!-- <input type="checkbox"> -->
                 <span class="consultation-text">ウェディングフォト</span>
@@ -102,17 +107,32 @@
 <footer class="footer">
   <div class="content">
     <ul class="footer-list">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちのこと</a></li>
-      <li><a href="service.html">サービス紹介</a></li>
-      <li><a href="photograph.html">撮影事例</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="index.html" class="link-hover">HOME</a></li>
+      <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+      <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+      <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+      <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
     </ul>
     <p class="footer-info">〒329-1233 <br class="sp-br">栃木県塩谷郡高根沢町宝積寺1750-2</p>
-    <small>© Copy</small>
+    <small>&copy; 2023 Mashed Potatoes Production</small>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
-<script src="js/script.js" defer></script> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+
+<script src="js/loadContact.js"></script>
+<script src="js/background.js"></script>
+<script src="js/lenis.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/scrollScale.js"></script>
+<script src="js/fadein.js"></script>
+<script src="js/mouseLink.js"></script>  
+<script src="js/topscroll.js"></script>
+<script src="js/scrollParallax.js"></script>
+<script src="js/mousestalker.js" defer></script>
 </body>
 </html>

@@ -3,40 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
-  <title>無題ドキュメント</title>
+  <meta name="description" content="マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。">
+  <title>マッシュポテトプロダクション</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/background.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
   <!--webフォント-->
   <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   
 </head>
 
 <body>
+  <div class="background-container">
+    <div class="background"></div>
+  </div>
   <header class="header">
     <div class="camera-icon">
-      <img src="images/camera-icon.png" alt="">
+      <img src="images/camera-icon.webp" alt="">
       <span class="camera-icon-text">menu</span>
     </div>
     <div class="header-box">
       <div class="header-menu">
         <ul class="header-menu-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">私たちのこと</a></li>
-          <li><a href="service.html">サービス紹介</a></li>
-          <li><a href="">撮影事例</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html" class="link-hover">HOME</a></li>
+          <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+          <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+          <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+          <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
   </header>
   <section class="photograph">
     <div class="container photo-heading">
-      <h2 class="en-title">photograph</h2>
+      <h2 class="en-title js-photo-tit"><span>p</span><span>h</span><span>o</span><span>t</span><span>o</span><span>g</span><span>r</span><span>a</span><span>p</span><span>h</span></h2>
       <span class="ja-title">撮影事例</span>
     </div>
     <div class="logo">
@@ -62,9 +66,11 @@
         </div>
       </div>
       <transition-group appear tag="div" class="photo-container container">
-        <div class="photo-content" v-for="project in filterByCategory" :key="index">          
+        <div class="photo-content scale-img" v-for="(project, index) in filterByCategory" :key="index">          
             <h3>{{project.title}}</h3>
-            <img class="photo-img" :src="project.image" alt="">
+            <div class="photo-inner">
+              <img class="photo-img" :src="project.image" alt="">
+            </div>
         </div>
       </transition-group>
       
@@ -78,11 +84,13 @@
     </div>
     <div class="content">
       <a class="contact-area" href="contact.html">
-        <h2 class="en-title">contact</h2>
+        <h2 class="en-title js-fadetex">
+          <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+        </h2>
         <p class="contact-tex">撮影のご相談は<br>お気軽に。</p>
         <p class="contact-description">撮影のご相談やご質問など、<br>少しでも興味を持っていただけた方は<br>こちらのお問い合わせフォームよりご連絡ください。</p>        
-        <div class="contact-img-01 sp-none"><img src="images/contact_01.png" alt=""></div>
-        <div class="contact-img-02 sp-none"><img src="images/contact_02.png" alt=""></div>        
+        <div class="contact-img-01 sp-none parallax-move-img"><img src="images/contact_01.webp" alt="" class=""></div>
+        <div class="contact-img-02 sp-none parallax-move-img"><img src="images/contact_02.webp" alt=""></div>        
       </a>
       <a href="contact.html" class="more pc-none sp-contact-link">view more</a>
     </div>
@@ -90,19 +98,36 @@
   <footer class="footer">
     <div class="content">
       <ul class="footer-list">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">私たちのこと</a></li>
-        <li><a href="service.html">サービス紹介</a></li>
-        <li><a href="">撮影事例</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="index.html" class="link-hover">HOME</a></li>
+        <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+        <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+        <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+        <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
       </ul>
       <p class="footer-info">〒329-1233 <br class="sp-br">栃木県塩谷郡高根沢町宝積寺1750-2</p>
-      <small>© Copy</small>
+      <small>&copy; 2023 Mashed Potatoes Production</small>
     </div>
   </footer>
   
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="js/photo.js" defer></script>
+  <script src="js/photo.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+
+  <script src="js/loadPhoto.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/lenis.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scrollScale.js"></script>
+  <script src="js/fadein.js"></script>
+  <script src="js/mouseLink.js"></script>  
+  <script src="js/topscroll.js"></script>
+  <script src="js/scrollParallax.js"></script>
+  <script src="js/mousestalker.js" defer></script>
 </body>
 
 </html>

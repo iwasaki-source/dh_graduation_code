@@ -4,39 +4,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
-  <title>無題ドキュメント</title>
+  <meta name="description" content="マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。">
+  <title>マッシュポテトプロダクション</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/background.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+  <!--webフォント-->
+  <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   
 </head>
 
 <body>
+  <div class="load_content">
+    <div class="load_image_group">
+      <img src="images/load_001.webp" alt="" class="img1">
+      <img src="images/load_002.webp" alt="" class="img2">
+      <img src="images/load_003.webp" alt="" class="img3">
+      <img src="images/load_004.webp" alt="" class="img4">
+      <img src="images/load_005.webp" alt="" class="img5">
+    </div>
+    <div class="load_tex">
+      <div class="load_tit_1">
+        <span>M</span><span>a</span><span>s</span><span>h</span><span>e</span><span>d</span><span> </span><span>P</span><span>o</span><span>t</span><span>a</span><span>t</span><span>o</span><span>e</span><span>s</span>
+      </div>
+      <div class="load_tit_2">
+        <span>P</span><span>r</span><span>o</span><span>d</span><span>u</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span>
+      </div>
+      <div class="load_sub">
+        <span>P</span><span>h</span><span>o</span><span>t</span><span>o</span><span> </span><span>&amp;</span><span> </span><span>V</span><span>i</span><span>d</span><span>e</span><span>o</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-container">
+    <div class="background"></div>
+  </div>
   <header class="header">
     <div class="camera-icon">
-      <img src="images/camera-icon.png" alt="">
+      <img src="images/camera-icon.webp" alt="">
       <span class="camera-icon-text">menu</span>
     </div>
     <div class="header-box">
       <div class="header-menu">
         <ul class="header-menu-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">私たちのこと</a></li>
-          <li><a href="service.html">サービス紹介</a></li>
-          <li><a href="">撮影事例</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html" class="link-hover">HOME</a></li>
+          <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+          <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+          <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+          <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
   </header>
   <section class="index_hero">
-    <div class="swiper">
+    <div class="swiper js-tophero">
       <div class="swiper-wrapper">
-        <div class="swiper-slide hero-img"><img src="images/top_hero_01.png" alt=""></div>
-        <div class="swiper-slide hero-img"><img src="images/top_hero_02.png" alt=""></div>
-        <div class="swiper-slide hero-img"><img src="images/top_hero_03.png" alt=""></div>
+        <div class="swiper-slide hero-img"><img src="images/top_hero_01.webp" alt=""></div>
+        <div class="swiper-slide hero-img"><img src="images/top_hero_02.webp" alt=""></div>
+        <div class="swiper-slide hero-img"><img src="images/top_hero_03.webp" alt=""></div>
       </div>
     </div>
     <div class="logo">
@@ -45,13 +75,15 @@
       <p class="logo-small"><a href="index.html">photo&amp;video</a></p>
     </div>
   </section>
-  <section class="index_about">
+  <div class="index_about">
     <div class="index_about-container">
       <article>
         <a href="about.html" class="index_about-content-wrapper js-link">
-          <div class="index_about-img"><img src="images/top_about_01.png" alt=""></div>
+          <div class="index_about-img js-fadeInner"><img src="images/top_about_01.webp" alt=""></div>
           <div class="index_about-content">
-            <h2 class="en-title">about</h2>
+            <h2 class="en-title js-fadetex">
+              <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
+            </h2>
             <span class="ja-title">私たちについて</span>
             <p class="description">マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。<br>
             <br>また、利用場面によって写真撮影でも動画撮影でも対応可能です。
@@ -61,26 +93,31 @@
         </a>
       </article>
     </div>
-    <div class="parallax">
+    <div class="parallax pc-none">
       <div class="parallax-img top_parallax-img"></div>
     </div>
-  </section>
+  </div>
+  <div class="fullwidth-image sp-none">
+    <img src="images/top_parallax.webp" alt="">
+  </div>
   <section class="index_service">
     <div class="container">
-      <h2 class="en-title">service</h2>
+      <h2 class="en-title js-fadetex">
+        <span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span>
+      </h2>
       <span class="ja-title">サービス紹介</span>
       <p class="description index_service-p">写真撮影・動画撮影各種お客様のご希望にあわせた対応が可能です。<br>
         個人でも企業の方でも心に残る撮影を心がけております。</p>
     </div>
     <a href="service.html" class="index_service-content-wrapper js-link">
-      <div class="index_service-content"> <img src="images/top_service_01.png" alt="" class="index_service-img">
+      <div class="index_service-content"> <img src="images/top_service_01.webp" alt="" class="index_service-img js-fadeScroll">
         <p class="en-title text-upper index_service-en-title">photography</p>
         <h3 class="index_service-ja-title">写真撮影</h3>
         <p class="index_service-description">個人からのウェディング写真や家族写真、企業からの店舗・商品撮影まで幅広く対応いたします。ニーズごとに最適な撮影メニューをご用意しています。</p>
         <span href="service.html" class="more js-more index_service-link index_service-link-sp-none">view more</span>
       </div>
-      <div class="index_service-content index_service-content-right"> <img src="images/top_service_02.png" alt=""
-          class="index_service-img">
+      <div class="index_service-content index_service-content-right"> <img src="images/top_service_02.webp" alt=""
+          class="index_service-img js-fadeScroll">
         <p class="en-title text-upper index_service-en-title">videography</p>
         <h3 class="index_service-ja-title">動画撮影</h3>
         <p class="index_service-description">結婚式の撮影、コーポレート撮影、ドローンを用いた風景動画などジャンルは問わず最適なプランニングで伝わる映像を作り出します。</p>
@@ -88,14 +125,16 @@
       <a href="service.html" class="more index_service-link index_service-link-pc-none">view more</a>
     </a>
   </section>
-  <section class="index_example" id="index_example">
+  <div class="index_example" id="index_example">
     <div class="index_example-container">
       <div class="index_example-container-wrapper">
         <div class="sticky">
-          <p class="en-title text-upper">photograph</p>
+          <p class="en-title text-upper js-fadetex">
+            <span>P</span><span>H</span><span>O</span><span>T</span><span>O</span><span>G</span><span>R</span><span>A</span><span>P</span><span>H</span>
+          </p>
           <span class="ja-title">撮影事例</span>
           <div class="index_example-description-container">
-            <a  href="photograph.html" class="index_example-description-wrapper js-link">
+            <a href="photograph.html" class="index_example-description-wrapper js-link">
               <p class="index_example-description">ウェディング、ニューボーン、七五三、商品撮影、建築、風景撮影など、お客様と一緒に作り上げた撮影事例の一部を紹介します
               </p>
               <span class="more js-more index_about-link sp-example-link">view more</span>
@@ -112,41 +151,42 @@
       </div>
       <div class="index_example-img-container">
         <ul class="index_example-img-grid">
-          <li> <img src="images/top_example_01.png" alt="" class="index_example-img">
-            <p class="index_example-img-tex">ウェディングフォト</p>
+          <li> <img src="images/top_example_01.webp" alt="" class="index_example-img js-fadeInner">
+            <p class="index_example-img-tex js-fadeInner">ウェディングフォト</p>
           </li>
-          <li> <img src="images/top_example_02.png" alt="" class="index_example-img">
-            <p class="index_example-img-tex">ニューボーン</p>
+          <li> <img src="images/top_example_02.webp" alt="" class="index_example-img js-fadeInner">
+            <p class="index_example-img-tex js-fadeInner">ニューボーン</p>
           </li>
-          <li> <img src="images/top_example_03.png" alt="" class="index_example-img">
-            <p class="index_example-img-tex">七五三</p>
+          <li> <img src="images/top_example_03.webp" alt="" class="index_example-img js-fadeInner">
+            <p class="index_example-img-tex js-fadeInner">七五三</p>
           </li>
-          <li> <img src="images/top_example_04.png" alt="" class="index_example-img">
-            <p class="index_example-img-tex">料理</p>
+          <li> <img src="images/top_example_04.webp" alt="" class="index_example-img js-fadeInner">
+            <p class="index_example-img-tex js-fadeInner">料理</p>
           </li>
-          <li> <img src="images/top_example_05.png" alt="" class="index_example-img">
-            <p class="index_example-img-tex">施工写真</p>
+          <li> <img src="images/top_example_05.webp" alt="" class="index_example-img js-fadeInner">
+            <p class="index_example-img-tex js-fadeInner">施工写真</p>
           </li>
-          <li> <img src="images/top_example_06.png" alt="" class="index_example-img">
-            <p class="index_example-img-tex">動画</p>
+          <li> <img src="images/top_example_06.webp" alt="" class="index_example-img js-fadeInner">
+            <p class="index_example-img-tex js-fadeInner">動画</p>
           </li>
         </ul>
       </div>
     </div>
-  </section>
-  <!--<section class="index_instagram">
-</section>-->
+  </div>
+  
   <section class="contact">
     <div id="g-ms" class="g-ms">
       <div class="g-ms_i"><div>お問い合わせ</div></div>
     </div>
     <div class="content">
       <a class="contact-area" href="contact.html">
-        <h2 class="en-title">contact</h2>
+        <h2 class="en-title js-fadetex">
+          <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+        </h2>
         <p class="contact-tex">撮影のご相談は<br>お気軽に。</p>
         <p class="contact-description">撮影のご相談やご質問など、<br>少しでも興味を持っていただけた方は<br>こちらのお問い合わせフォームよりご連絡ください。</p>        
-        <div class="contact-img-01 sp-none"><img src="images/contact_01.png" alt=""></div>
-        <div class="contact-img-02 sp-none"><img src="images/contact_02.png" alt=""></div>        
+        <div class="contact-img-01 sp-none parallax-move-img"><img src="images/contact_01.webp" alt="" class=""></div>
+        <div class="contact-img-02 sp-none parallax-move-img"><img src="images/contact_02.webp" alt=""></div>        
       </a>
       <a href="contact.html" class="more pc-none sp-contact-link">view more</a>
     </div>
@@ -154,19 +194,31 @@
   <footer class="footer">
     <div class="content">
       <ul class="footer-list">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">私たちのこと</a></li>
-        <li><a href="service.html">サービス紹介</a></li>
-        <li><a href="photograph.html">撮影事例</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="index.html" class="link-hover">HOME</a></li>
+        <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+        <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+        <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+        <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
       </ul>
       <p class="footer-info">〒329-1233 <br class="sp-br">栃木県塩谷郡高根沢町宝積寺1750-2</p>
-      <small>© Copy</small>
+      <small>&copy; 2023 Mashed Potatoes Production</small>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+
+  <script src="js/loadTop.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/lenis.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scrollScale.js"></script>
+  <script src="js/fadein.js"></script>
   <script src="js/mouseLink.js"></script>  
-  <script src="js/script.js" defer></script>
+  <script src="js/topscroll.js"></script>  
+  <script src="js/scrollParallax.js"></script>
   <script src="js/mousestalker.js" defer></script>
 </body>
 

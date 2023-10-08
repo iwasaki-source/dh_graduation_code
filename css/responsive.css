@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+.pc-none-sp-display {
+  display: none;
+}
+
 @media (max-width: 1100px) {
     .sp-br {
         display: block;
@@ -35,6 +40,10 @@
     }
     .camera-icon img {
         width: 35px;
+    }
+    .header-box {
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 0;
     }
     .swiper {
         margin-top: 93px;
@@ -87,6 +96,7 @@
     }
     .about_hero-img {
         width: 70vh;
+        height: 600px;
     }
     .about_hero-wrapper {
         padding-left: 0px;
@@ -170,11 +180,61 @@
     .pc-none {
         display: block !important;
     }
+    .pc-display-sp-none {
+      display: none;
+    }
+    .pc-none-sp-display {
+      display: block !important;
+    }
     .more {
         font-size: 12px;
         text-align: center;
         display: block !important;
     }
+    .load_tex .load_tit_1 {
+      font-size: 18px;
+      letter-spacing: 8px;
+    }
+    .load_tex .load_tit_2 {
+      font-size: 18px;
+      letter-spacing: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .load_tex .load_sub {
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+    .load_image_group img {
+      width: 150px;
+    }
+    .load_image_group .img1 {
+      left: -20px;
+      top: 60px;
+      transform: rotate(-10deg);
+    }
+    .load_image_group .img2 {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -50px;
+    }
+    .load_image_group .img3 {
+      right: -30px;
+      top: 100px;
+      transform: rotate(12deg);
+    }
+    .load_image_group .img4 {
+      left: 0px;
+      bottom: 10px;
+      transform: rotate(20deg);
+    }
+    .load_image_group .img5 {
+      right: 0px;
+      bottom: 0px;
+      transform: rotate(-10deg);
+    }
+
     .container {
         margin: 0 22px;
     }
@@ -205,6 +265,7 @@
         width: 80%;
         margin: 0 0 40px auto;
         position: relative;
+        overflow: visible;
     }
     .index_service-img {
         height: 282px;
@@ -324,7 +385,7 @@
         margin-top: 14px;
     }
     .about_parallax-img-02 {
-        background-image: url("../images/about_parallax-img-02-sp.png");
+        background-image: url("../images/about_parallax-img-02-sp.webp");
         background-position: 7%;
     }
     .about_member-content {
@@ -357,6 +418,9 @@
     }
 
     /* サービス紹介 */
+    .service-content {
+      margin-top: 60px;
+    }
     .service_photo-video-img-wrapper {
         margin: 0;
     }
@@ -367,13 +431,25 @@
         right: -22px;
     }
     .service_photo-video-img-02 {
+        position: absolute;
         height: 240px;
         top: 300px;
         bottom: 0px;
         left: -22px;
     }
+
+    .service_photo-video-img-para-01 {
+        height: auto;
+    }
+
+    .service_photo-video-img-para-02 {
+      height: auto;
+      display: block;
+      margin: 0;
+    }
+
     .service_photo-video-heading {
-        margin-top: 600px;
+        margin-top: 540px;
     }
     .service_photo-video-text-area {
         width: 100%;
@@ -388,7 +464,7 @@
         width: 210px !important;
     }
     .swiper-slide.swiper-img img {
-        height: 210px;
+        height: 400px;
         object-position: bottom;
         object-fit: cover;
     }
@@ -397,9 +473,9 @@
         margin-top: 30px;
         text-align: left;
     }
-    .service_question {
+    /* .service_question {
         margin-top: 120px;
-    }
+    } */
     .vertical {
         writing-mode: initial;
     }
@@ -411,7 +487,26 @@
         margin-bottom: 50px;
     }
 
-
+    .service-example-tit-sub {
+      padding-top: 10vw;
+    }
+    .service-example-tit-sub p {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 35px;
+    }
+    .service-example-container {
+      padding-right: 0;
+    }
+    .service-example-link {
+      padding-right: 8vw;
+      margin-top: 60px;
+      padding-bottom: 120px;
+    }
+    .service_question {
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
 
 
     /* お問い合わせ */
