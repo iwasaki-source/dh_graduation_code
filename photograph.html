@@ -14,7 +14,7 @@
   <!--webフォント-->
   <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
+
 </head>
 
 <body>
@@ -23,7 +23,7 @@
   </div>
   <header class="header">
     <div class="camera-icon">
-      <img src="images/camera-icon.webp" alt="">
+      <img src="images/camera-icon.png" alt="">
       <span class="camera-icon-text">menu</span>
     </div>
     <div class="header-box">
@@ -66,18 +66,18 @@
         </div>
       </div>
       <transition-group appear tag="div" class="photo-container container">
-        <div class="photo-content scale-img" v-for="(project, index) in filterByCategory" :key="index">          
+        <div class="photo-content scale-img" v-for="(project, index) in filterByCategory" :key="index">
             <h3>{{project.title}}</h3>
             <div class="photo-inner">
               <img class="photo-img" :src="project.image" alt="">
             </div>
         </div>
       </transition-group>
-      
+
     </div>
 
   </section>
-  
+
   <section class="contact">
     <div id="g-ms" class="g-ms">
       <div class="g-ms_i"><div>お問い合わせ</div></div>
@@ -88,9 +88,9 @@
           <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
         </h2>
         <p class="contact-tex">撮影のご相談は<br>お気軽に。</p>
-        <p class="contact-description">撮影のご相談やご質問など、<br>少しでも興味を持っていただけた方は<br>こちらのお問い合わせフォームよりご連絡ください。</p>        
-        <div class="contact-img-01 sp-none parallax-move-img"><img src="images/contact_01.webp" alt="" class=""></div>
-        <div class="contact-img-02 sp-none parallax-move-img"><img src="images/contact_02.webp" alt=""></div>        
+        <p class="contact-description">撮影のご相談やご質問など、<br>少しでも興味を持っていただけた方は<br>こちらのお問い合わせフォームよりご連絡ください。</p>
+        <div class="contact-img-01 sp-none parallax-move-img"><img src="images/contact_01.png" alt="" class=""></div>
+        <div class="contact-img-02 sp-none parallax-move-img"><img src="images/contact_02.png" alt=""></div>
       </a>
       <a href="contact.html" class="more pc-none sp-contact-link">view more</a>
     </div>
@@ -104,18 +104,16 @@
         <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
         <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
       </ul>
-      <p class="footer-info">〒329-1233 <br class="sp-br">栃木県塩谷郡高根沢町宝積寺1750-2</p>
-      <small>&copy; 2023 Mashed Potatoes Production</small>
     </div>
   </footer>
-  
+
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="js/photo.js"></script>
 
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <script src="js/loadPhoto.js"></script>
   <script src="js/background.js"></script>
@@ -124,7 +122,7 @@
   <script src="js/menu.js"></script>
   <script src="js/scrollScale.js"></script>
   <script src="js/fadein.js"></script>
-  <script src="js/mouseLink.js"></script>  
+  <script src="js/mouseLink.js"></script>
   <script src="js/topscroll.js"></script>
   <script src="js/scrollParallax.js"></script>
   <script src="js/mousestalker.js" defer></script>

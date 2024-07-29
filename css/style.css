@@ -243,13 +243,13 @@ a:hover .index_about-img img {
   border-radius: 5px;
 }
 .top_parallax-img {
-  background-image: url("../images/top_parallax.webp");
+  background-image: url("../images/top_parallax.png");
 }
 .about_parallax-img-01 {
-  background-image: url("../images/about_parallax-img-01.webp");
+  background-image: url("../images/about_parallax-img-01.png");
 }
 .about_parallax-img-02 {
-  background-image: url("../images/about_parallax-img-02.webp");
+  background-image: url("../images/about_parallax-img-02.png");
 }
 .container {
   margin: 0 8vw;
@@ -588,19 +588,19 @@ a:hover .index_about-img img {
 }
 
 .service-example-item.ex-item01 {
-  background-image: url(../images/serice_photo_01.webp);
+  background-image: url(../images/serice_photo_01.png);
 }
 .service-example-item.ex-item02 {
-  background-image: url(../images/serice_photo_02.webp);
+  background-image: url(../images/serice_photo_02.png);
 }
 .service-example-item.ex-item03 {
-  background-image: url(../images/serice_photo_03.webp);
+  background-image: url(../images/serice_photo_03.png);
 }
 .service-example-item.ex-item04 {
-  background-image: url(../images/serice_photo_04.webp);
+  background-image: url(../images/serice_photo_04.png);
 }
 .service-example-item.ex-item05 {
-  background-image: url(../images/serice_photo_05.webp);
+  background-image: url(../images/serice_photo_05.png);
 }
 
 .service-example-item-tit {
