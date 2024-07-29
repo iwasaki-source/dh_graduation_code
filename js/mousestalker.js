@@ -38,9 +38,9 @@ function msPosUpdate() {
 }
 //hover時にclass追加
 const stalkerLingObj = document.querySelector('.contact-area');
-stalkerLingObj.addEventListener('mouseover', function() {
-    mouseStalker.classList.add('g-ms-hover');
+stalkerLingObj.addEventListener('mouseenter', function() {
+    mouseStalker.classList.add('g-ms-hover');    
 });
-stalkerLingObj.addEventListener('mouseout', function(){
-    mouseStalker.classList.remove('g-ms-hover');
+stalkerLingObj.addEventListener('mouseleave', function(){
+    mouseStalker.classList.remove('g-ms-hover');    
 });

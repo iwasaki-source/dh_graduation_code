@@ -4,19 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
-  <title>無題ドキュメント</title>
+  <meta name="description" content="マッシュポテトプロダクションは、お客様の心に残る写真を撮影する「出張撮影サービス」です。ウェディング、マタニティ、七五三、家族写真など、様々なシーンを撮影します。">
+  <title>マッシュポテトプロダクション</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/background.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
   <!--webフォント-->
   <link rel="stylesheet" href="https://use.typekit.net/pvc2rev.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 
 <body>
+  <div class="background-container">
+    <div class="background"></div>
+  </div>
   <header class="header">
     <div class="camera-icon">
       <img src="images/camera-icon.png" alt="">
@@ -25,23 +31,27 @@
     <div class="header-box">
       <div class="header-menu">
         <ul class="header-menu-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">私たちのこと</a></li>
-          <li><a href="service.html">サービス紹介</a></li>
-          <li><a href="">撮影事例</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html" class="link-hover">HOME</a></li>
+          <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+          <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+          <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+          <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
   </header>
 <section class="about_hero">
   <div class="about_hero-content">
-    <div class="about_hero-img sp-none"><img src="images/about_top.png" alt=""></div>
-    <div class="about_hero-img pc-none"><img src="images/about_top_sp.png" alt=""></div>
+    <div class="about_hero-img sp-none parallax-move-img js-about-hero">
+      <img src="images/about_top.png" alt="">
+    </div>
+    <div class="about_hero-img pc-none js-about-hero">
+      <img src="images/about_top_sp.png" alt="">
+    </div>
     <div class="about_hero-wrapper">
-      <h2 class="en-title">about</h2>
-      <span class="ja-title">私たちについて</span>
-      <p class="about_hero_description">マッシュポテトプロダクションは20xx年xx月に創業し、栃木県を拠点にウェディング、ニューボーンをはじめお客様の大切な節目・記念日の出張撮影をしております。<br>
+      <h2 class="en-title js-about-tit"><span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></h2>
+      <span class="ja-title js-about-tex">私たちについて</span>
+      <p class="about_hero_description js-about-tex">マッシュポテトプロダクションは20xx年xx月に創業し、栃木県を拠点にウェディング、ニューボーンをはじめお客様の大切な節目・記念日の出張撮影をしております。<br>
         個人からだけではなく企業からの商品撮影なども承っています。また、お客様のご希望にあわせて写真撮影でも動画撮影でもご利用いただけます。
         </p>
     </div>
@@ -55,7 +65,7 @@
 <section class="about_heading">
     <div class="about_heading-content">
         <div class="about_heading-wrapper">
-            <h2 class="en-title">memorable photos</h2>
+            <h2 class="en-title js-fadetex"><span>m</span><span>e</span><span>m</span><span>o</span><span>r</span><span>a</span><span>b</span><span>l</span><span>e</span><span>&nbsp;</span><span>p</span><span>h</span><span>o</span><span>t</span><span>o</span><span>s</span></h2>
             <span class="ja-title">心に残る写真を</span>
         </div>
         <p class="about_heading-description">お客様の思い出の瞬間を一緒に一緒に過ごさせていただき【しあわせ】を形に残していく。
@@ -63,43 +73,46 @@
           <br>
         <br>たいせつな人と過ごす時間を写真に収めてみませんか。<br>お客様の自然体の魅力が伝わり、思わず目に留まる写真を残していけたら嬉しく思います。</p>
     </div>
-    <div class="parallax">
+    <div class="parallax pc-none">
         <div class="parallax-img about_parallax-img-01"></div>
     </div>
 </section>
+<section class="fullwidth-image-about sp-none">
+  <img src="images/about_parallax-img-01.png" alt="">
+</section>
 <section class="about_advantage">
     <div class="content">
-        <h2 class="en-title">our advantage</h2>
+        <h2 class="en-title js-fadetex"><span>o</span><span>u</span><span>r</span><span>&nbsp;</span><span>a</span><span>d</span><span>v</span><span>a</span><span>n</span><span>t</span><span>a</span><span>g</span><span>e</span></h2>
         <span class="ja-title">私たちの強み</span>
         <div class="about_advantage-content">
             <div class="about_advantage-wrapper about_advantage-wrapper-tex-img">
                 <h3>出張撮影サービスで撮りたい場所で撮れる</h3>
                 <p class="description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
-            <div class="about_advantage-img"><img src="images/about_advantage_01.png" alt=""></div>
+            <div class="about_advantage-img js-fadeInner scale-img"><img src="images/about_advantage_01.png" alt=""></div>
         </div>
         <div class="about_advantage-content about_advantage-content-row-reverse">
             <div class="about_advantage-wrapper about_advantage-wrapper-img-tex">
                 <h3>相談しやすい雰囲気でお客様のご要望にあった撮影が可能</h3>
                 <p class="description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
-            <div class="about_advantage-img"><img src="images/about_advantage_02.png" alt=""></div>
+            <div class="about_advantage-img js-fadeInner scale-img"><img src="images/about_advantage_02.png" alt=""></div>
         </div>
         <div class="about_advantage-content">
             <div class="about_advantage-wrapper about_advantage-wrapper-tex-img">
                 <h3>写真撮影でも動画撮影でもご希望に合わせた撮影が可能</h3>
                 <p class="description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
-            <div class="about_advantage-img"><img src="images/about_advantage_03.png" alt=""></div>
+            <div class="about_advantage-img js-fadeInner scale-img"><img src="images/about_advantage_03.png" alt=""></div>
         </div>
     </div>
     <div class="parallax">
-      <div class="parallax-img about_parallax-img-02"></div>        
+      <div class="parallax-img about_parallax-img-02"></div>
     </div>
 </section>
 <section class="about_member">
     <div class="content">
-        <h2 class="en-title">member</h2>
+        <h2 class="en-title js-fadetex"><span>m</span><span>e</span><span>m</span><span>b</span><span>e</span><span>r</span></h2>
         <span class="ja-title">メンバー紹介</span>
         <div class="about_member-content">
             <div class="about_member-img"><img src="images/about_member.png" alt=""></div>
@@ -111,7 +124,7 @@
 </section>
 <section class="about_company">
     <div class="content">
-        <h2 class="en-title">company info</h2>
+        <h2 class="en-title js-fadetex"><span>c</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span><span>&nbsp;</span><span>i</span><span>n</span><span>f</span><span>o</span></h2>
         <h2 class="heading-title">会社情報</h2>
         <div class="about_company-content">
           <dl>
@@ -128,7 +141,6 @@
           </dl>
           <dl>
             <dt>住所</dt>
-            <dd>〒329-1233 栃木県塩谷郡高根沢町宝積寺1750-2</dd>
           </dl>
           <dl>
             <dt>事業内容</dt>
@@ -149,11 +161,13 @@
   </div>
   <div class="content">
     <a class="contact-area" href="contact.html">
-      <h2 class="en-title">contact</h2>
+      <h2 class="en-title js-fadetex">
+        <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+      </h2>
       <p class="contact-tex">撮影のご相談は<br>お気軽に。</p>
-      <p class="contact-description">撮影のご相談やご質問など、<br>少しでも興味を持っていただけた方は<br>こちらのお問い合わせフォームよりご連絡ください。</p>        
-      <div class="contact-img-01 sp-none"><img src="images/contact_01.png" alt=""></div>
-      <div class="contact-img-02 sp-none"><img src="images/contact_02.png" alt=""></div>        
+      <p class="contact-description">撮影のご相談やご質問など、<br>少しでも興味を持っていただけた方は<br>こちらのお問い合わせフォームよりご連絡ください。</p>
+      <div class="contact-img-01 sp-none parallax-move-img"><img src="images/contact_01.png" alt="" class=""></div>
+      <div class="contact-img-02 sp-none parallax-move-img"><img src="images/contact_02.png" alt=""></div>
     </a>
     <a href="contact.html" class="more pc-none sp-contact-link">view more</a>
   </div>
@@ -161,18 +175,29 @@
 <footer class="footer">
   <div class="content">
     <ul class="footer-list">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちのこと</a></li>
-      <li><a href="service.html">サービス紹介</a></li>
-      <li><a href="photograph.html">撮影事例</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="index.html" class="link-hover">HOME</a></li>
+      <li><a href="about.html" class="link-hover">私たちのこと</a></li>
+      <li><a href="service.html" class="link-hover">サービス紹介</a></li>
+      <li><a href="photograph.html" class="link-hover">撮影事例</a></li>
+      <li><a href="contact.html" class="link-hover">お問い合わせ</a></li>
     </ul>
-    <p class="footer-info">〒329-1233 <br class="sp-br">栃木県塩谷郡高根沢町宝積寺1750-2</p>
-    <small>© Copy</small>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="js/script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script src="js/loadAbout.js"></script>
+<script src="js/background.js"></script>
+<script src="js/lenis.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/scrollScale.js"></script>
+<script src="js/fadein.js"></script>
+<script src="js/mouseLink.js"></script>
+<script src="js/topscroll.js"></script>
+<script src="js/scrollParallax.js"></script>
 <script src="js/mousestalker.js" defer></script>
 </body>
 </html>
